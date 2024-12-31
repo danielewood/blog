@@ -11,7 +11,7 @@ ShowToc: true
 TocOpen: true
 ---
 
-In my [previous post](link-to-previous-post), we explored OpenTofu 1.9's new provider `for_each` feature for managing multi-region infrastructure. Today, we'll take this concept further by managing infrastructure across multiple AWS accounts and IAM roles, in addition to regions. This is a common requirement in enterprise environments where you need to manage resources across development, staging, and production accounts, with different IAM roles for varying levels of access.
+In my [previous post](../opentofu_provider_foreach_example), we explored OpenTofu 1.9's new provider `for_each` feature for managing multi-region infrastructure. Today, we'll take this concept further by managing infrastructure across multiple AWS accounts and IAM roles, in addition to regions. This is a common requirement in enterprise environments where you need to manage resources across development, staging, and production accounts, with different IAM roles for varying levels of access.
 
 ## Challenge
 
