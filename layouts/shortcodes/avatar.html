@@ -1,0 +1,9 @@
+<figure style="margin: 20 auto; padding: 0;">
+    <img loading="lazy" 
+         src="{{ .Get "src" }}"
+         {{- if or (.Get "alt") (.Get "caption") }}
+         alt="{{ with .Get "alt" }}{{ . }}{{ else }}{{ .Get "caption" | markdownify| plainify }}{{ end }}"
+         {{- end -}}
+         style="width: {{ default "120px" (.Get "size") }}; height: {{ default "120px" (.Get "size") }}; border-radius: 50%; object-fit: cover; display: block; margin: 0 auto;"
+    />
+</figure>
