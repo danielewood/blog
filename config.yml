@@ -13,7 +13,7 @@ buildExpired: false
 
 minify:
   disableXML: true
-  minifyOutput: true
+  minifyOutput: false
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
@@ -92,9 +92,9 @@ params:
     #   SiteVerificationTag: "XYZabc"
 
   cover:
-    hidden: true # hide everywhere but not in structured data
+    hidden: false # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
-    hiddenInSingle: true # hide on single page
+    hiddenInSingle: false # hide on single page
 
   editPost:
     URL: "https://github.com/danielewood/blog/tree/main/content"
@@ -140,3 +140,6 @@ markup:
     guessSyntax: true
     lineNos: true
     style: monokai
+  goldmark:
+    renderer:
+      debug: true
