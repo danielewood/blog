@@ -267,6 +267,7 @@ data "aws_vpc_endpoint_service" "this" {
 
 resource "aws_vpc_endpoint" "this" {
   for_each = data.aws_vpc_endpoint_service.this
+  provider = aws.shared
 
   service_name = each.value.service_name
   vpc_id       = data.aws_vpc.shared.id
